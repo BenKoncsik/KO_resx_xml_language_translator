@@ -28,6 +28,10 @@ This Python script automates the translation of `.resx` resource files for a pro
    ```sh
    python3 script.py --new-only --resx-directory /path/to/resx --exclude-languages "fr,de"
    ```
+4. Create an executable:
+   ```sh
+   pyinstaller --onefile --console --hidden-import=deep_translator.main script.py
+   ```
 
 #### Windows
 1. Ensure Python 3 is installed (download from [Python website](https://www.python.org/downloads/)).
@@ -38,6 +42,10 @@ This Python script automates the translation of `.resx` resource files for a pro
 3. Run the script:
    ```cmd
    python script.py --new-only --resx-directory C:\path\to\resx --exclude-languages "fr,de"
+   ```
+4. Create an executable:
+   ```cmd
+   pyinstaller --onefile --console --hidden-import=deep_translator.main script.py
    ```
 
 ### Dependencies
@@ -87,6 +95,10 @@ Ez a Python szkript automatikusan lefordítja a `.resx` erőforrásfájlokat egy
    ```sh
    python3 script.py --new-only --resx-directory /path/to/resx --exclude-languages "fr,de"
    ```
+4. Hozz létre egy futtatható fájlt:
+   ```sh
+   pyinstaller --onefile --console --hidden-import=deep_translator.main script.py
+   ```
 
 #### Windows
 1. Telepítsd a Python 3-at ([Python letöltés](https://www.python.org/downloads/)).
@@ -97,6 +109,10 @@ Ez a Python szkript automatikusan lefordítja a `.resx` erőforrásfájlokat egy
 3. Futtasd a szkriptet:
    ```cmd
    python script.py --new-only --resx-directory C:\path\to\resx --exclude-languages "fr,de"
+   ```
+4. Hozz létre egy futtatható fájlt:
+   ```cmd
+   pyinstaller --onefile --console --hidden-import=deep_translator.main script.py
    ```
 
 ### Függőségek
